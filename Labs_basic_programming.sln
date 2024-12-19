@@ -29,8 +29,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab 4", "Lab 4", "{03346FCC-2BD4-47BE-BCF7-A25384A766D2}"
 	ProjectSection(SolutionItems) = preProject
 		Lab-4.c = Lab-4.c
-		Readme.md = Readme.md
 		Lab-4.cpp = Lab-4.cpp
+		Readme.md = Readme.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab 5", "Lab 5", "{545553E7-554D-44AF-A54E-ED38FCF6DA25}"
@@ -49,7 +49,22 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab 6", "Lab 6", "{90740FCC
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab 7", "Lab 7", "{608559D7-7A2F-4423-80C6-91B2E298067C}"
 	ProjectSection(SolutionItems) = preProject
+		Lab-7.c = Lab-7.c
 		Lab-7.cpp = Lab-7.cpp
+		Readme.md = Readme.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab 8", "Lab 8", "{FC5D7779-83C7-4970-AA11-4C5E69954043}"
+	ProjectSection(SolutionItems) = preProject
+		Lab-8.c = Lab-8.c
+		Lab-8.cpp = Lab-8.cpp
+		Lab-c.cpp = Lab-c.cpp
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab 9", "Lab 9", "{AFE2E47E-AE1B-4482-9656-E7719568348E}"
+	ProjectSection(SolutionItems) = preProject
+		Lab-9.c = Lab-9.c
+		Lab-9.cpp = Lab-9.cpp
 	EndProjectSection
 EndProject
 Global
