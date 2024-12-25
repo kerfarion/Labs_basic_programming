@@ -2,62 +2,44 @@
 using namespace std;
 
 
-void bubble_sort(int lis[], int len);
+void sum(int* matrix[], int n, int m);
 
 int main() {
-
 	setlocale(LC_ALL, "RU");
-	int* a;
-	int d, n, j = 1;
+	int** a;
+	int n, m;
 
-	cout << "Введите длину массива: ";
+	cout << "Введите количество строк и столбцов матрицы через пробел: ";
 	cin >> n;
+	cin >> m;
 
-	a = new int[n + 1];
+	a = new int* [n];
+	for (int i = 0; i < n; i++) {
+		a[i] = new int[m];
+	}
 
 	for (int i = 0; i < n; i++) {
-		cout << "Элемент " << i + 1 << ": ";
-		cin >> a[i];
+		cout << "Строка " << i + 1 << "(" << m << " элементов): ";
+		for (int j = 0; j < m; j++) {
+			cin >> a[i][j];
+		}
 	}
 
-	bubble_sort(a, n);
-	cout << "Вот отсортированный массив: ";
-	for (int i = 0; i < n; i++) cout << a[i] << " ";
-	cout << endl;
-
-
-	cout << "Введите число, которое будет добавленно в массив: ";
-	cin >> d;
-
-	//a[n] = d;
-	//bubble_sort(a, n + 1);
-
-	//cout << "Вот отсортированный массив с добавленной переменной: ";
-	//for (int i = 0; i < (n + 1); i++) cout << a[i] << " ";
-	// Это было бы слишком просто)))
-
-	a[n] = d;
-	while (a[n - j] > d and j <= n) {
-		swap(a[n - j], a[n - j + 1]);
-		j++;
-	}
-
-	cout << "Вот отсортированный массив с добавленной переменной: ";
-	for (int i = 0; i < (n + 1); i++) cout << a[i] << " ";
+	sum(a, n, m);
 
 	return 0;
 }
 
-void bubble_sort(int lis[], int len) {
-	while (len--) {
 
-		bool flag = false;
-		for (int i = 0; i < len; i++) {
-			if (lis[i] > lis[i + 1]) {
-				swap(lis[i], lis[i + 1]);
-				flag = true;
-			}
+void sum(int* matrix[], int n, int m) {
+	int* suma;
+	suma = new int[n];
+	for (int i = 0; i < n; i++) {
+		suma[i] = 0;
+		for (int j = 0; j < m; j += 2) {
+			suma[i] += matrix[i][j];
 		}
-		if (flag = false) break;
 	}
+
+	for (int i = 0; i < n; i++) cout << suma[i] << "\n";
 }
